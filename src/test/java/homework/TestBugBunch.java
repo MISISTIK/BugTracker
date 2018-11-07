@@ -48,7 +48,7 @@ public class TestBugBunch {
         int res = bugBunch.getBugs(requestToGet);
         showInfo(res,requestToGet);
         res = bugBunch.getBugs(requestToGet);
-        assertEquals(-1, res);
+        assertEquals(0, res);
         System.out.println("----------------------");
         System.out.println();
     }
@@ -60,7 +60,7 @@ public class TestBugBunch {
         int res = bugBunch.getBugs(requestToGet);
         res = bugBunch.getBugs(requestToGet);
         showInfo(res,requestToGet);
-        assertEquals(-(requestToGet+1), res);
+        assertEquals(0, res);
         System.out.println("----------------------");
         System.out.println();
     }
